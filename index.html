@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NoomiClone — Physics Movement Lab</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="ui">
+  <header><div class="logo">NOOMI<span>CLONE</span></div><div class="pill" id="modeLabel">HIGH BAR</div><div class="readouts"><b id="state">AIRBORNE</b><span id="speed">0.0 m/s</span><span id="spin">0°/s</span></div></header>
+  <div id="center"><div id="crosshair">+</div><div id="toast"></div></div>
+  <div id="bottom">
+    <div class="controls"><b>W/S</b> tuck / extend <b>A/D</b> twist <b>Q/E</b> roll <b>SPACE</b> grab / release <b>SHIFT</b> push <b>R</b> reset <b>P</b> pause</div>
+    <div class="meters"><div><label>FLIGHT</label><i id="flight"></i></div><div><label>POWER</label><i id="power"></i></div><div><label>GRIP</label><i id="grip"></i></div></div>
+  </div>
+  <nav><button data-mode="bar" class="active">BAR</button><button data-mode="tumble">TUMBLING</button><button id="slow">0.5×</button><button id="reset">RESET</button></nav>
+</div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
